@@ -1,4 +1,4 @@
-module GoSpotifyAdBlocker
+module github.com/kooroshh/spotifyadblocker
 
 go 1.17
 

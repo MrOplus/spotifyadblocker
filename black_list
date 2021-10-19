@@ -17,5 +17,5 @@ cloudfront.net
 ravenjs.com
 gvt1.com
 moatads.com
-doubleclick.net
+.*doubleclick.net
 sentry.io

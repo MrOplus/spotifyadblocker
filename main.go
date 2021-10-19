@@ -2,15 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/DavidGamba/go-getoptions"
+	"github.com/things-go/go-socks5"
 	"io/ioutil"
 	"log"
 	"os"
 	"regexp"
 	"strings"
 )
-import "github.com/DavidGamba/go-getoptions"
-import "github.com/things-go/go-socks5"
-
 func main() {
 	var listenPort int
 	var listenAddress string
@@ -34,7 +33,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	blackList := strings.Split(string(contentBytes) ,"\n")
+	contentString := strings.ReplaceAll(string(contentBytes),"\r","")
+	blackList := strings.Split(contentString ,"\n")
 	var hostRegexes = make([]*regexp.Regexp,len(blackList))
 
 	for i , host := range blackList {
