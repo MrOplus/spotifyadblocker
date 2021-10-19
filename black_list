@@ -1,7 +1,6 @@
 ^adservice*
 audio(.*).spotify.com
 video(.*).scdn.co
-audio(.*).scdn.co
 agkn.com
 adnxs.com
 rlcdn.com
