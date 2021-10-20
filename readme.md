@@ -4,4 +4,21 @@ run the spotify ad blocker cli using
 ```
 ./spotifyadblocker --port 51081
 ```
-and set the socks settings in spotify application
+and set the socks settings in spotify application  
+```
+SYNOPSIS:
+    spotifyadblocker.exe --port|-p <int> [--address|-a <string>] [--blacklist|-b <string>]
+               [--help|-h|-?] [--upstream|-u <string>] [<args>]
+
+REQUIRED PARAMETERS:
+    --port|-p <int>            Listening Port
+
+OPTIONS:
+    --address|-a <string>      Listening Address (default: "127.0.0.1")
+
+    --blacklist|-b <string>    Blacklist File path (default: "black_list")
+
+    --help|-h|-?               (default: false)
+
+    --upstream|-u <string>     UpStream Socks5 Address (ex: 127.0.0.1:1080) (default: "")
+```
