@@ -1,4 +1,4 @@
-# Go Spotify Ad Blocker
+# Go Spotify Ad Blocker [![release](https://github.com/kooroshh/SpotifyADBlocker/actions/workflows/release.yml/badge.svg?branch=1.0)](https://github.com/kooroshh/SpotifyADBlocker/actions/workflows/release.yml)
 simple Socks5 Server to block spotify ads  
 run the spotify ad blocker cli using 
 ```
