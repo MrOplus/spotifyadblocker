@@ -14,7 +14,6 @@ type CustomResolver struct {
 }
 
 func (c CustomResolver) Resolve(ctx context.Context, name string) (context.Context, net.IP, error) {
-
 	for _,r := range c.blockList {
 		if r.MatchString(name) {
 			fmt.Fprintf(os.Stdout,"%s blocked by user rule\n",name)
