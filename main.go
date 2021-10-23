@@ -21,7 +21,7 @@ func main() {
 	var blackListFileAddress string
 	opt := getoptions.New()
 	opt.Bool("help", false, opt.Alias("h", "?"))
-	opt.IntVar(&listenPort, "port", 51081,opt.Required(),opt.Alias("p"),opt.Description("Listening Port"))
+	opt.IntVarOptional(&listenPort, "port", 51081,opt.Alias("p"),opt.Description("Listening Port"))
 	opt.StringVarOptional(&listenAddress, "address", "127.0.0.1",opt.Alias("a"),opt.Description("Listening Address"))
 	opt.StringVarOptional(&blackListFileAddress, "blacklist", "black_list",opt.Alias("b"),opt.Description("Blacklist File path"))
 	opt.StringVarOptional(&upStreamProxy, "upstream", "",opt.Alias("u"),opt.Description("UpStream Socks5 Address (ex: 127.0.0.1:1080)"))
